@@ -1,10 +1,17 @@
 <html lang="de">
 <head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.conversejs.org/4.1.2/css/converse.min.css">
+<script src="https://cdn.conversejs.org/3rdparty/libsignal-protocol.min.js"></script>          
 <script src="https://cdn.conversejs.org/4.1.2/dist/converse.min.js" charset="utf-8"></script>
 </head>
-<body></body>
+<body class="converse-fullscreen">
 <script>  converse.initialize({ bosh_service_url: 'https://wiuwiu.de/http-bind/',
+          authentication: 'login',
+          auto_away: 300,
+          auto_reconnect: true,
           view_mode: 'fullscreen'});
 </script> 
+</body>
 </html>
